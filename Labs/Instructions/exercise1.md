@@ -35,9 +35,9 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
 
    ![](../media/ex1img7.png)
 
-1. Once you have the **contoso-creative-writer-code-files-main** directory opened, ensure you have the source code files from the **explorer pane**
+1. Once you have the **contoso-creative-writer-code-files-main** directory opened, ensure you have the source code files from the **explorer pane**.
 
-   ![](../media/ex1newimg2.png)
+   ![](../media/L1-S5.png)
    
 1. From the explorer menu, navigate to `/infra/main.bicep` file to review. A Bicep file is a simplified, readable syntax for defining and deploying Azure resources, which is compiled into ARM templates for deployment.
 
@@ -45,7 +45,7 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
    
 1. In the `main.bicep`, navigate to line number 85, variable **resourcetoken** and update the value with **<inject key="DeploymentID" enableCopy="true"/>**. Please note that if you missed to update this, the next step will fail to deploy the resources
 
-   ![image](https://github.com/user-attachments/assets/8a6305f2-4163-4cba-954d-dcbe94108382)
+    ![](../media/L1-S7.png)
 
 1. In the `main.bicep`, navigate to **ai** module definition.
  

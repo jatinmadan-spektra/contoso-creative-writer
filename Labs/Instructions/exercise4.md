@@ -36,6 +36,7 @@ In this task, you will run the orchestrator logic to simulate the application fl
    ```bash
    python -m orchestrator
    ```
+   >**Note:** Please ignore the warning message while running the above command. You will be able to view the detailed logs.
 
    ![](../media/ex3img3.png)
 

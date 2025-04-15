@@ -57,6 +57,8 @@ In this task, you will learn how to test the application locally by running both
    ```bash
    npm install
    ```
+   >**Note:**  Please ignore the deprecation warning messages. All required packages have been installed successfully, and you can proceed with the next steps. 
+ 
 
 1. Once you have installed all the dependencies and the environment is set up, run the following command to start the frontend service.
 
