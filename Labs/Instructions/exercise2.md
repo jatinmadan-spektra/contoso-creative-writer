@@ -192,30 +192,6 @@ In this task, you will review three core code files that together initialize a F
 
    >After initial writing, the `editor` agent reviews the draft. If it doesn’t meet quality standards, the editor sends feedback to improve content in a loop. Each step yields a `Message` instance to communicate progress, which can be streamed in real-time to a client or logging system.
 
-1. As you reviewed `orchestartor.py`, navigate to `tracing.py` file from the explorer menu. This file helps to trace all the operations and send data for logging and monitoring.
-
-1. In `tracing.py` file, find the `init_tracing` function which is a crucial part of the file.
-
-   ```python
-   def init_tracing(local_tracing: bool = False):
-    if local_tracing:
-        # Use PromptyTracer for local tracing
-        local_trace = PromptyTracer()
-        Tracer.add("PromptyTracer", local_trace.tracer)
-    else:
-        # Use OpenTelemetry tracer with Azure Monitor for remote tracing
-        app_insights = os.getenv("APPINSIGHTS_CONNECTIONSTRING")
-        oteltrace.set_tracer_provider(TracerProvider(sampler=ParentBasedTraceIdRatio(1.0)))
-        oteltrace.get_tracer_provider().add_span_processor(
-            BatchSpanProcessor(AzureMonitorTraceExporter(connection_string=app_insights))
-        )
-        return oteltrace.get_tracer(_tracer)
-   ```
-
-   > **Local vs. Remote Tracing:** local_tracing determines if the tracing uses a local `PromptyTracer` (useful for debugging without external dependencies) or OpenTelemetry with Azure Monitor, enabling insights on Azure’s Application Insights.
-
-   >**Azure Monitor Integration:** The `AzureMonitorTraceExporter` sends trace data to Azure, providing remote monitoring of spans and trace data for performance and diagnostics.
-
 ## Summary
 
 In this exercise, you have reviewed and analyzed three key code files that collectively establish a FastAPI application with integrated task orchestration and tracing. You explored the application’s core setup, examined the workflow of agents that handle different task components, and assessed the tracing configuration using OpenTelemetry and Azure Monitor. This review provided an understanding of how the application handles API requests, manages task flows, and sets up monitoring for performance insights and error tracking.
