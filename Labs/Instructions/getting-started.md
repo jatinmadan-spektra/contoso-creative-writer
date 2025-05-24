@@ -84,8 +84,6 @@ Feel free to **start, stop, or restart** your virtual machine as needed from the
 
    ![](../media/gs-05.png)
 
-   >If a powershell window opens up, please minimize it and continue with the lab. Make sure you do not close that window.
-
 2. On the **Sign into Microsoft Azure** tab, you will see the login screen. Enter the following email/username and then click on **Next**.
 
    - Email/Username: <inject key="AzureAdUserEmail"></inject>
