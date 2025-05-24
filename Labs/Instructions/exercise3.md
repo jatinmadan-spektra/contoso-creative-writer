@@ -16,11 +16,11 @@ By the end of this exercise, you will be able to:
 
 In this task, you will learn how to test the application locally by running both the API and Web parts on your local machine. You will set up the necessary environment, run the components, and verify their functionality.
 
-1. As you are on **Visual Studio Code** pane, open **New terminal** from **Terminal** menu using the top menu bar.
+1. On the **Visual Studio Code**, open a **New Terminal** by selecting **Terminal** from the top menu bar and then clicking on **New Terminal**.
 
    ![](../media/ex1img1.png)
 
-1. Once the terminal is open, select **v (1)** from the right corner and select **Git Bash (2)** from the menu.
+1. Once the terminal is open, click on the dropdown arrow **(1)** in the top-right corner of the terminal pane, then select **Git Bash (2)** from the list.
 
    ![](../media/ex1img2.png)
 
@@ -42,7 +42,7 @@ In this task, you will learn how to test the application locally by running both
 
 1. Now, to run the **WEB (Frontend)**, you have to open a new tab on the terminal.
 
-1. From the top right corner, click on **v (1)** and select **Git Bash (2)** to open a new tab of Git Bash terminal.
+1. From the top right corner, click on the dropdown arrow **(1)** in the top-right corner of the terminal pane, then select **Git Bash (2)** from the list.
 
    ![](../media/ex1img2.png)
 

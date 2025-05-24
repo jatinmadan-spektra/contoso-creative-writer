@@ -61,7 +61,7 @@ In this task, you will familiarize yourself with the various technologies that p
 
 In this task, you will review three core code files that together initialize a FastAPI application with tracing and orchestration capabilities. You’ll analyze the main application setup, task flow with agents, and tracing configuration using OpenTelemetry and Azure Monitor, gaining insight into API handling, task management, and monitoring setup.
 
-1. From the explorer menu of **visual Studio Code**, navigate to `/src/api/main.py` file and review the codes.
+1. From the explorer menu of **Visual Studio Code**, navigate to `/src/api/main.py` file and review the codes.
 
 1. The first part of the file imports various libraries and modules used throughout the application.
 
@@ -75,25 +75,34 @@ In this task, you will review three core code files that together initialize a F
    from fastapi.responses import StreamingResponse
    from fastapi.middleware.cors import CORSMiddleware
    from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
-   from tracing import init_tracing
+   from fastapi import FastAPI, File, UploadFile
+   from evaluate.evaluators import evaluate_image
    from orchestrator import Task, create
    ```
    
-   > **Os and Path:** Used for file path handling and environment variable management.
+   > **os and Path:** Used for file path operations and interacting with environment variables.
 
-   > **FastAPI:** The web framework used to build the API.
+   > **FastAPI:** The web framework used to define and run the API.
 
-   > **dotenv:** Loads environment variables from a .env file.
+   > **dotenv (load_dotenv):** Loads environment variables from a `.env` file for secure and flexible configuration.
 
-   > **Prompty:** A library for managing and evaluating prompts with OpenAI.
+   > **Prompty:** A library for streaming, tracing, and managing AI prompts, particularly with OpenAI integrations.
 
-   > **StreamingResponse:** Used for streaming data from the server to the client.
+   > **PromptyStream / AsyncPromptyStream:** Enable synchronous and asynchronous streaming of prompt outputs.
 
-   > **CORSMiddleware:** Middleware to handle Cross-Origin Resource Sharing (CORS).
+   > **trace:** Used to trace prompt executions for debugging or logging purposes.
 
-   > **FastAPIInstrumentor:** Part of OpenTelemetry for instrumenting the FastAPI app with tracing.
+   > **StreamingResponse:** Allows the API to send a continuous stream of data to the client (e.g. live AI responses).
 
-   > **tracing and orchestrator:** Custom modules for tracing setup and task orchestration.
+   > **CORSMiddleware:** Handles Cross-Origin Resource Sharing to allow secure requests from web apps hosted on different domains.
+
+   > **FastAPIInstrumentor:** Provides observability by instrumenting FastAPI with OpenTelemetry for tracing and metrics.
+
+   > **File, UploadFile:** Built-in FastAPI utilities to handle file uploads via API requests.
+
+   > **evaluate_image:** A custom or project-specific function/module used to evaluate uploaded image files.
+
+   > **Task, create (from orchestrator):** Used to define and initiate executable tasks or workflows within the backend logic.
 
 1. The next part of the file focuses on loading environment variables and initializing the **FastAPI** application.
 
