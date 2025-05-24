@@ -8,7 +8,7 @@ In this exercise, you will review the source code of creative writer application
 
 ## Lab Objectives
 
-After you complete this exercise, you will understand:
+By the end of this exercise, you will be able to:
 
 - Know the technology stacks used
 - Review source code files
@@ -79,34 +79,35 @@ In this task, you will review three core code files that together initialize a F
    from orchestrator import Task, create
    ```
    
-   >**os and Path:** Used for file path handling and environment variable management.
+   > **Os and Path:** Used for file path handling and environment variable management.
 
-   >**FastAPI:** The web framework used to build the API.
+   > **FastAPI:** The web framework used to build the API.
 
-   >**dotenv:** Loads environment variables from a .env file.
+   > **dotenv:** Loads environment variables from a .env file.
 
-   >**prompty:** A library for managing and evaluating prompts with OpenAI.
+   > **Prompty:** A library for managing and evaluating prompts with OpenAI.
 
-   >**StreamingResponse:** Used for streaming data from the server to the client.
+   > **StreamingResponse:** Used for streaming data from the server to the client.
 
-   >**CORSMiddleware:** Middleware to handle Cross-Origin Resource Sharing (CORS).
+   > **CORSMiddleware:** Middleware to handle Cross-Origin Resource Sharing (CORS).
 
-   >**FastAPIInstrumentor:** Part of OpenTelemetry for instrumenting the FastAPI app with tracing.
+   > **FastAPIInstrumentor:** Part of OpenTelemetry for instrumenting the FastAPI app with tracing.
 
-   >**tracing and orchestrator:** Custom modules for tracing setup and task orchestration.
+   > **tracing and orchestrator:** Custom modules for tracing setup and task orchestration.
 
-1. The next part of the file focus on loading environment variables and initializing **FastAPI** application.
+1. The next part of the file focuses on loading environment variables and initializing the **FastAPI** application.
 
    ```python
    base = Path(__file__).resolve().parent
    load_dotenv()
    app = FastAPI()
    ```
-   >**load_dotenv():** This function loads the environment variables from a .env file into the Python environment. It ensures that sensitive information like API keys and database credentials are stored securely and can be accessed within the app.
 
-   >**init_tracing():** Initializes the tracing system for monitoring and debugging, ensuring that requests and interactions can be traced across services.
+   > **load_dotenv():** This function loads the environment variables from a .env file into the Python environment. It ensures that sensitive information like API keys and database credentials are stored securely and can be accessed within the app.
 
-   >**FastAPI():** This line initializes the FastAPI app, which will handle HTTP requests and route them to the appropriate functions.
+   > **init_tracing():** Initializes the tracing system for monitoring and debugging, ensuring that requests and interactions can be traced across services.
+
+   > **FastAPI():** This line initializes the FastAPI app, which will handle HTTP requests and route them to the appropriate functions.
 
 1. In the next part, there is a setup of  CORS (Cross-Origin Resource Sharing) middleware.
 
@@ -144,7 +145,7 @@ In this task, you will review three core code files that together initialize a F
        )
    ```
 
-   >**POST /api/article:** This endpoint accepts a POST request to create an article based on the task details. It uses the PromptyStream to handle real-time streaming of the article creation process.
+   > **POST /api/article:** This endpoint accepts a POST request to create an article based on the task details. It uses the PromptyStream to handle real-time streaming of the article creation process.
   
 1. As you have reviewed `main.py`, now select `orchestrator.py` from left explorer menu. This file is responsible for structured logging for generating, refining, and evaluating articles.
 
@@ -184,19 +185,16 @@ In this task, you will review three core code files that together initialize a F
         yield complete_message("writer", {"complete": True})
    ```
 
-   >The `@trace` decorator traces function execution, likely capturing each step in distributed tracing tools.
+   > The `@trace` decorator traces function execution, likely capturing each step in distributed tracing tools.
 
-   >**Researcher Agent:** Starts by invoking the researcher agent with a research_context, gathering topic-specific data. Each agent stage logs a starting and completion message.
+   > **Researcher Agent:** Starts by invoking the researcher agent with a research_context, gathering topic-specific data. Each agent stage logs a starting and completion message.
 
-   >Uses the `product` agent to find relevant products, contributing contextual content for the article. The `writer` agent combines research, product information, and the assignment context to draft the article.
+   > Uses the `product` agent to find relevant products, contributing contextual content for the article. The `writer` agent combines research, product information, and the assignment context to draft the article.
 
-   >After initial writing, the `editor` agent reviews the draft. If it doesn’t meet quality standards, the editor sends feedback to improve content in a loop. Each step yields a `Message` instance to communicate progress, which can be streamed in real-time to a client or logging system.
+   > After initial writing, the `editor` agent reviews the draft. If it doesn’t meet quality standards, the editor sends feedback to improve content in a loop. Each step yields a `Message` instance to communicate progress, which can be streamed in real-time to a client or logging system.
 
 ## Summary
 
 In this exercise, you have reviewed and analyzed three key code files that collectively establish a FastAPI application with integrated task orchestration and tracing. You explored the application’s core setup, examined the workflow of agents that handle different task components, and assessed the tracing configuration using OpenTelemetry and Azure Monitor. This review provided an understanding of how the application handles API requests, manages task flows, and sets up monitoring for performance insights and error tracking.
 
-### You have successfully completed this exercise!!
-
-
-
+### Click on Next >> to proceed to the next exercise.
