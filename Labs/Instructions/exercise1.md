@@ -77,15 +77,15 @@ In this task, you will be using the Azure Developer CLI (azd) to deploy the reso
 
    ![](../media/ex1img3.png)
 
-1. On the sign-in page, provide the following details:
+2. On the **Sign into Microsoft Azure** tab, you will see the login screen. Enter the following email/username and then click on **Next**.
 
-   - **Username:** <inject key="AzureAdUserEmail"></inject> and click on **Next**.
+   - Email/Username: <inject key="AzureAdUserEmail"></inject>
+     
+     ![](../media/gs-06.png)
 
-      ![](../media/ex1img4.png)
+3. Now enter the following password and click on **Sign in**.
 
-   - **Password:** <inject key="AzureAdUserPassword"></inject> and click on **Sign in**.
-
-      ![](../media/ex1img5.png)
+   - Password: <inject key="AzureAdUserPassword"></inject>
 
 1. When prompted, click **No, sign in to this app only**.
 
