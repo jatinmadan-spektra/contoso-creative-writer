@@ -23,7 +23,7 @@ In this task, you will familiarize yourself with the various technologies that p
 
   - ***Why It’s Used:*** FastAPI is chosen for its performance and ease of use. It allows you to quickly create a RESTful API for interacting with the various agents involved in the article-writing process.
 
-  - ***Reference :*** [FastAPI](https://fastapi.tiangolo.com/)
+  - ***Reference:*** [FastAPI](https://fastapi.tiangolo.com/)
 
 - **Prompty**
 
@@ -31,7 +31,7 @@ In this task, you will familiarize yourself with the various technologies that p
     
   - ***Why It’s Used:*** Prompty helps in organizing and refining prompts to guide AI agents effectively, ensuring that each step in the article creation process (research, writing, editing) is powered by accurate and relevant inputs.
 
-  - ***Reference :*** [Prompty](https://prompty.ai/)
+  - ***Reference:*** [Prompty](https://prompty.ai/)
 
 - **Bing Search API**
 
@@ -39,7 +39,7 @@ In this task, you will familiarize yourself with the various technologies that p
 
   - ***Why It’s Used:*** In the Contoso Creative Writer app, the Bing Search API is used by the research agent to gather relevant information about the topic provided by the user.
 
-  - ***Reference :*** [Bing Search API](https://www.microsoft.com/en-us/bing/apis)
+  - ***Reference:*** [Bing Search API](https://www.microsoft.com/en-us/bing/apis)
 
 - **Azure OpenAI**
 
@@ -47,7 +47,7 @@ In this task, you will familiarize yourself with the various technologies that p
 
   - ***Why It’s Used:*** In this app, Azure OpenAI powers the various AI agents that handle tasks like research, product matching, article writing, and editing.
 
-  - ***Reference :*** [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
+  - ***Reference:*** [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
 
 - **Azure AI Search**
 
@@ -55,7 +55,7 @@ In this task, you will familiarize yourself with the various technologies that p
 
   - ***Why It’s Used:*** The product agent uses Azure AI Search to find products related to the research topic by performing a semantic similarity search in a vector store, improving the relevance of product recommendations.
 
-  - ***Reference :*** [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
+  - ***Reference:*** [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
 
 ### Task 2: Review source code files 
 
