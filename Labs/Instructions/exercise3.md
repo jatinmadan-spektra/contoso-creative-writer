@@ -86,13 +86,13 @@ In this task, you will learn how to test the application locally by running both
 
    > It will take some time to generate the article, please wait till it generates.
 
-   ![](../media/ex2img3.png)
+   ![](../media/24052025(8).png)
 
 1. Now as the article is generated, you can click on **Debug** symbol from the bottom right corner to check how the process are going on in the backend.
 
    ![](../media/ex2img2.png)
 
-   > This will open up a new tab from right in which you will be able to trace allthe processes happening in backend.
+   > This will open up a new tab from right in which you will be able to trace all the processes happening in backend.
 
    ![](../media/ex2img1.png)
 
