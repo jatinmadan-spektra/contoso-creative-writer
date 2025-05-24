@@ -119,15 +119,15 @@ In this task, you will be using the Azure Developer CLI (azd) to deploy the reso
 
 1. On the sign-in page, provide the following details:
 
-   - Username: <inject key="AzureAdUserEmail"></inject> and click on **Next**.
+   - **Username:** <inject key="AzureAdUserEmail"></inject> and click on **Next**.
 
       ![](../media/ex1img4.png)
 
-   - Password: <inject key="AzureAdUserPassword"></inject> and click on **Sign in**.
+   - **Password:** <inject key="AzureAdUserPassword"></inject> and click on **Sign in**.
 
       ![](../media/ex1img5.png)
 
-1. When prompted, click on **No, sign in to this app only** and continue.
+1. When prompted, click **No, sign in to this app only**.
 
 1. Return to your **Visual Studio Code** terminal. You may now be prompted to select a subscription from a list. Enter **1** and press **Enter**.
 
