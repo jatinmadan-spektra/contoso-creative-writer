@@ -17,13 +17,13 @@ By the end of this exercise, you will be able to:
 
 In this task, you will gain an understanding of the Azure Developer CLI (azd) and how it facilitates the deployment of cloud resources. You'll explore the main bicep file, the core infrastructure template for your application, and learn about the primary resources it defines, including key parameters, dependencies, and outputs. By the end, you'll be familiar with how azd uses this file to automate provisioning, setting the foundation for deploying resources with ease in the next steps.
 
->**Lab tip:** **AZD (Azure Developer CLI)** is a command-line tool designed to streamline the process of building, deploying, and managing Azure applications. It simplifies the interaction with Azure resources by allowing developers to define infrastructure using code, deploy applications, and manage environments in a more efficient and automated way.
+> **Lab Tip:** **AZD (Azure Developer CLI)** is a command-line tool designed to streamline the process of building, deploying, and managing Azure applications. It simplifies the interaction with Azure resources by allowing developers to define infrastructure using code, deploy applications, and manage environments in a more efficient and automated way.
 
 1. From the desktop, open **Visual Studio Code**.
 
    ![](../media/ex1img0.png)
 
-1. On **Visual Studio Code** pane, select **Open Folder** under **file** menu from top menu.
+1. In **Visual Studio Code**, go to the **File** menu at the top and select **Open Folder...**
 
    ![](../media/ex1img6.png)
 
@@ -35,7 +35,7 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
 
    ![](../media/ex1img7.png)
 
-1. Once you have the **contoso-creative-writer-code-files-main** directory opened, ensure you have the source code files from the **explorer pane**.
+1. Once you have the **contoso-creative-writer-code-files-main** directory opened, ensure you have the source code files from the **Explorer pane**.
 
    ![](../media/L1-S5.png)
    
@@ -93,7 +93,7 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
 
 In this task, you will be using the Azure Developer CLI (azd) to deploy the resources defined in your Bicep templates to Azure. The Azure Developer CLI simplifies the process of managing infrastructure as code, allowing you to efficiently deploy, manage, and monitor your applications and resources directly from the command line.
 
-1. As you are on **Visual Studio Code** pane, open **New terminal** from **Terminal** menu using the top menu bar.
+1. On the **Visual Studio Code**, open a **New Terminal** by selecting **Terminal** from the top menu bar and then clicking on **New Terminal**.
 
    ![](../media/ex1img1.png)
 
@@ -103,20 +103,21 @@ In this task, you will be using the Azure Developer CLI (azd) to deploy the reso
    azd auth login
    ```
    
-1. Once you run this command, a sign in page opens up, as you have already logged in to portal you just need to select your account and click continue.
+1. Once you run the above command, a sign in page opens up, as you have already logged in to portal you just need to select your account.
 
 1. Once you have logged in successfully, navigate back to your terminal and run the following command to authenticate the **Azure CLI** tool as well.
 
    ```bash
    az login
    ```
+
    > **Note:** You may need to minimize Visual Studio Code pane to see the pop up window to sign in.
 
 1. Once you are on the pop up window, select **Work or school account** and click on **Continue**.
 
    ![](../media/ex1img3.png)
 
-1. On the sign-in page, provide the following:
+1. On the sign-in page, provide the following details:
 
    - Username: <inject key="AzureAdUserEmail"></inject> and click on **Next**.
 
@@ -128,7 +129,7 @@ In this task, you will be using the Azure Developer CLI (azd) to deploy the reso
 
 1. When prompted, click on **No, sign in to this app only** and continue.
 
-1. Return to your **Visual Studio Code** terminal, now it prompts you to select subscription with a list of subscriptions, enter **1** and hit enter.
+1. Return to your **Visual Studio Code** terminal. You may now be prompted to select a subscription from a list. Enter **1** and press **Enter**.
 
 1. Run the following command to set the execution policy to avoid any security-related issues.
 
@@ -148,20 +149,20 @@ In this task, you will be using the Azure Developer CLI (azd) to deploy the reso
 
 1. In the next prompt, it will ask to select a location. Use the arrow keys and select **<inject key="region" enableCopy="false"/>** region from the list. **If you select any other region, the deployment will fail due to less quota for the OpenAI Model**. 
 
-1. In the next prompt, select **rg-creative-#####** for resource group.
+1. In the next prompt, select **rg-creative-<inject key="DeploymentID" enableCopy="false"/>** for resource group.
 
    ![](../media/rg-sel.png)
 
-   >This may take up to 15 minutes to deploy all the resources, till then please move to the next exercise as that is a read-only exercise where you will get to know the core application and technology stacks used.
+   > This may take up to 15 minutes to deploy all the resources, till then please move to the next exercise as that is a read-only exercise where you will get to know the core application and technology stacks used.
 
-   >If you face any error related to deployment, please rerun the `azd up` command.
+   > If you face any error related to deployment, please rerun the `azd up` command.
 
-   <validation step="45d3bb64-1c15-4974-9ead-629db5887289" />
-   
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+   
+   <validation step="45d3bb64-1c15-4974-9ead-629db5887289" />
 
 ## Summary
 
