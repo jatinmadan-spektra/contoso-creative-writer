@@ -107,15 +107,17 @@ In this task, you will be using the Azure Developer CLI (azd) to deploy the reso
 
    ![](../media/ex1newimg4.png)
 
-1. In the next prompt, it will ask to select a location. Use the arrow keys and select **<inject key="region" enableCopy="false"/>** region from the list. **If you select any other region, the deployment will fail due to less quota for the OpenAI Model**. 
+1. In the next prompt, it will ask to select a location. Use the arrow keys and select **<inject key="region" enableCopy="false"/>** region from the list. **If you select any other region, the deployment will fail due to less quota for the OpenAI Model**.
+
+   ![](../media/24052025(6).png)
 
 1. In the next prompt, select **rg-creative-<inject key="DeploymentID" enableCopy="false"/>** for resource group.
 
-   ![](../media/rg-sel.png)
+   ![](../media/24052025(7).png)
 
    > This may take up to 15 minutes to deploy all the resources, till then please move to the next exercise as that is a read-only exercise where you will get to know the core application and technology stacks used.
 
-   > If you face any error related to deployment, please rerun the `azd up` command.
+   > If you encounter any deployment errors, try rerunning the `azd up` command to resolve them.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
