@@ -14,7 +14,7 @@ By the end of this exercise, you will be able to:
 
 ### Task 1: Testing the Application Locally: API and Web
 
-In this task, you will learn how to test the application locally by running both the API and Web parts on your local machine. You will set up the necessary environment, run the components, and verify their functionality.
+In this task, you'll learn how to test the application locally by running both the API and Web components on your machine. You'll set up the required environment, launch each component, and verify that everything functions as expected.
 
 1. On the **Visual Studio Code**, open a **New Terminal** by selecting **Terminal** from the top menu bar and then clicking on **New Terminal**.
 
@@ -68,7 +68,7 @@ In this task, you will learn how to test the application locally by running both
    
    > By running this command, the frontend will be started on your local system. Make sure you don't close the terminal tab.
 
-1. Now you will see the URL for the application, which is running locally. To access that hover over the link and do **CTRL+Click**, it will directly navigate to the application interface.
+1. You will now see the URL for the locally running application. To access it, hover over the link and press **CTRL+Click** to navigate directly to the application interface.
 
    ![](../media/ex2img7.png)
 
@@ -84,7 +84,7 @@ In this task, you will learn how to test the application locally by running both
 
    ![](../media/ex2img4.png)
 
-   > It will take some time to generate the article, please wait till it generates.
+   > The article is being generated and may take a few moments. Please wait until the process completes.
 
    ![](../media/24052025(8).png)
 
@@ -92,7 +92,7 @@ In this task, you will learn how to test the application locally by running both
 
    ![](../media/ex2img2.png)
 
-   > This will open up a new tab from right in which you will be able to trace all the processes happening in backend.
+   > This will open a new tab on the right, where you can monitor all the processes running in the backend.
 
    ![](../media/ex2img1.png)
 
