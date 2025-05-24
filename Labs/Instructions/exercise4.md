@@ -32,13 +32,13 @@ In this task, you will run the orchestrator logic to simulate the application fl
 
    > **Lab Tip:** `Tracing` is the process of tracking and logging the execution flow of an application. Enabling tracing helps capture detailed insights into the operations, allowing you to monitor the sequence of function calls, identify performance bottlenecks, and troubleshoot issues by providing a step-by-step view of the system's behavior. This is particularly useful for debugging and improving the application.
 
-1. Now again you will be running orchestrator with local tracing enabled. Now you will be getting more detailed logs.
+1. You will now run the orchestrator again with local tracing enabled, which will provide more detailed logs for better visibility into the process.
 
    ```bash
    python -m orchestrator
    ```
 
-   > **Note:** Please ignore the warning message while running the above command. You will be able to view the detailed logs.
+   > **Note:** You can ignore the warning message that appears when running the above command. Detailed logs will still be available for review.
 
    ![](../media/ex3img3.png)
 
