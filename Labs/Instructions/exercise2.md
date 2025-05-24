@@ -112,7 +112,7 @@ In this task, you will review three core code files that together initialize a F
    app = FastAPI()
    ```
 
-   > **load_dotenv():** This function loads the environment variables from a .env file into the Python environment. It ensures that sensitive information like API keys and database credentials are stored securely and can be accessed within the app.
+   > **load_dotenv():** This function loads the environment variables from a .env file into the Python environment. It ensures that sensitive information like API keys and database credentials is stored securely and can be accessed within the app.
 
    > **init_tracing():** Initializes the tracing system for monitoring and debugging, ensuring that requests and interactions can be traced across services.
 
@@ -138,7 +138,7 @@ In this task, you will review three core code files that together initialize a F
        origins = ['*']
    ```
 
-   >**CORS Middleware** is used to allow or restrict cross-origin requests (requests coming from other domains).
+   > **CORS Middleware** is used to allow or restrict cross-origin requests (requests coming from other domains).
 
 1. The next part creates the API endpoint for handling article creation in the application.
 
