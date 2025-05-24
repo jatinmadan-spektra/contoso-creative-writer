@@ -22,8 +22,6 @@ Learn how to create and orchestrate AI-driven agents for automated content gener
 
 ## Pre-requisites
 
-- **Familiarity with Azure:** Basic knowledge of Azure services and the Azure portal for managing cloud resources.
-
 - **Basic Knowledge of Python:** Familiarity with Python programming to work with the FastAPI framework and understand the agent workflows.
 
 - **Understanding of Azure Developer CLI:** Basic understanding of how to deploy resources using Azure Developer CLI.
