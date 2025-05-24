@@ -43,51 +43,11 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
 
    ![](../media/ex1newimg3.png)
    
-1. In the `main.bicep`, navigate to line number 85, variable **resourcetoken** and update the value with **<inject key="DeploymentID" enableCopy="true"/>**. Please note that if you missed updating this, the next step will fail to deploy the resources
+1. In the `main.bicep`, navigate to line number 85, variable **resourcetoken** and update the value with **<inject key="DeploymentID" enableCopy="true"/>**. 
 
-    ![](../media/L1-S7.png)
+   > **Please note:** If you missed to update this, the next task will fail to deploy the resources successfully.
 
-1. In the `main.bicep`, navigate to the **ai** module definition.
- 
-   ```bicep
-    module ai 'core/host/ai-environment.bicep' = {
-    name: 'ai'
-    scope: resourceGroup
-    params: {
-        location: location
-        tags: tags
-        hubName: !empty(aiHubName) ? aiHubName : 'ai-hub-${resourceToken}'
-        projectName: !empty(aiProjectName) ? aiProjectName : 'ai-project-${resourceToken}'
-        keyVaultName: !empty(keyVaultName) ? keyVaultName : '${abbrs.keyVaultVaults}${resourceToken}'
-        storageAccountName: !empty(storageAccountName)
-        ? storageAccountName
-        : '${abbrs.storageStorageAccounts}${resourceToken}'
-        openAiName: !empty(openAiName) ? openAiName : 'aoai-${resourceToken}'
-        openAiConnectionName: !empty(openAiConnectionName) ? openAiConnectionName : 'aoai-connection'
-        openAiContentSafetyConnectionName: !empty(openAiContentSafetyConnectionName) ? openAiContentSafetyConnectionName : 'aoai-content-safety-connection'
-        openAiModelDeployments: array(contains(aiConfig, 'deployments') ? aiConfig.deployments : [])
-        logAnalyticsName: !useApplicationInsights
-        ? ''
-        : !empty(logAnalyticsWorkspaceName)
-            ? logAnalyticsWorkspaceName
-            : '${abbrs.operationalInsightsWorkspaces}${resourceToken}'
-        applicationInsightsName: !useApplicationInsights
-        ? ''
-        : !empty(applicationInsightsName) ? applicationInsightsName : '${abbrs.insightsComponents}${resourceToken}'
-        containerRegistryName: !useContainerRegistry
-        ? ''
-        : !empty(containerRegistryName) ? containerRegistryName : '${abbrs.containerRegistryRegistries}${resourceToken}'
-        searchServiceName: !useSearch ? '' : !empty(searchServiceName) ? searchServiceName : '${abbrs.searchSearchServices}${resourceToken}'
-        searchConnectionName: !useSearch ? '' : !empty(searchConnectionName) ? searchConnectionName : 'search-service-connection'
-      }
-    }
-   ```
-
-   > This module sets up essential AI infrastructure, such as Azure OpenAI, Key Vault, storage accounts, and log analytics.
-
-   > It allows customization via parameters like openAiName, keyVaultName, and storageAccountName.
-
-   > Additionally, it handles the setup for application insights and container registries.
+   ![](../media/L1-S7.png)
 
 ### Task 2: Streamlining Azure Resource Deployment with Azure Developer CLI (azd)
 
