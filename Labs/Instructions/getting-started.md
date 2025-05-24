@@ -1,6 +1,6 @@
 # Build Creative App using Azure AI and Prompty
 
-### Overall Estimated Duration : 4 Hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -14,9 +14,9 @@ Learn how to create and orchestrate AI-driven agents for automated content gener
 
 - **Deploying Resources with Azure Developer CLI:** Learn to efficiently deploy and manage Azure resources using the Azure Developer CLI, streamlining your development and deployment workflows.
 
-- **Exploring the Building Blocks of the Application:** Understand about the backend and how the application is built.
+- **Exploring the Building Blocks of the Application:** Understand the backend and how the application is built.
 
-- **Testing the Application: API and Web Components:** Learn to run the application locally and test all the functionalities of that application.
+- **Testing the Application: API and Web Components:** Learn to run the application locally and test all the functionalities of the application.
 
 - **Debugging and Evaluating Application Logic:** learn to run the orchestrator, activate tracing for debugging purposes, and assess the generated content's quality.
 
@@ -40,39 +40,39 @@ The architecture includes a series of AI-driven agents working together to produ
 
 1. **Azure OpenAI:** Provides advanced natural language understanding and generation capabilities, enabling the agent to interpret user input and generate meaningful results. This will be used for advanced natural language processing capabilities, enabling the agent to understand and process the user’s input.
 
-2. **Bing Search API:** Allows the agent to access up-to-date information from the web by conducting real-time searches, helping gather relevant content.This will be used to search regarding the topic provided in the user input
+2. **Bing Search API:** Allows the agent to access up-to-date information from the web by conducting real-time searches, helping gather relevant content. This will be used to search for the topic provided in the user input
 
 3. **Azure AI Search:** A search service that performs semantic searches within a vector store, enabling the agent to find relevant data by understanding the meaning behind queries. This will be used to find the main keywords in the prompt given by user.
 
-4. **Application Insights:** Part of Azure Monitor, this service tracks the performance and health of the application, logging metrics and providing alerts. It enables monitoring for optimization and helps ensure reliability of the overall system.
+4. **Application Insights:** Part of Azure Monitor, this service tracks the performance and health of the application, logging metrics and providing alerts. It enables monitoring for optimization and helps ensure the reliability of the overall system.
 
 5. **Azure Managed Identity:** Provides an automatically managed identity for your Azure resources to securely authenticate to services without the need for explicit credentials. It simplifies secure access to Azure services. This will be used to resolve access for the backend services from the application hosted.
 
-6. **Visual Studio Code (VS Code):** A lightweight, open-source code editor developed by Microsoft, supporting a wide range of programming languages and extensions. This will be used to development and and deployment of the application in this lab.
+6. **Visual Studio Code (VS Code):** A lightweight, open-source code editor developed by Microsoft, supporting a wide range of programming languages and extensions. This will be used for the development and deployment of the application in this lab.
 
 ## Getting Started with Lab
 
 Welcome to your Build Creative App using Azure AI and Prompty Lab! We've prepared a seamless environment for you to explore and learn. Let's begin by making the most of this experience.
 
-### Accessing Your Lab Environment
+## Accessing Your Lab Environment
 
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
 ![](../media/gs1.png)
 
-### Exploring Your Lab Resources
+## Exploring Your Lab Resources
 
 To get a better understanding of your lab resources and credentials, navigate to the Environment tab.
 
 ![](../media/gs2.png)
 
-### Utilizing the Split Window Feature
+## Utilizing the Split Window Feature
 
 For convenience, you can open the lab guide in a separate window by selecting the Split Window button from the Top right corner
 
 ![](../media/gs3.png)
 
-### Managing Your Virtual Machine
+## Managing Your Virtual Machine
 
 Feel free to start, stop, or restart your virtual machine as needed from the Resources tab. Your experience is in your hands!
 
@@ -80,13 +80,13 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
 ## Let's Get Started with Azure Portal
 
-1. In the JumpVM, click on **Azure portal** shortcut of Microsoft Edge browser which is created on desktop.
+1. In the JumpVM, click on the **Azure portal** shortcut of Microsoft Edge browser which is created on desktop.
 
    ![](../media/gs-05.png)
 
-   >If a powershell window openes up, please minimize it and continue with the lab. Make sure you do not close that window.
+   >If a powershell window opens up, please minimize it and continue with the lab. Make sure you do not close that window.
 
-2. On **Sign into Microsoft Azure** tab you will see login screen, in that enter following email/username and then click on **Next**.
+2. On the **Sign into Microsoft Azure** tab, you will see the login screen. Enter the following email/username and then click on **Next**.
 
    - Email/Username: <inject key="AzureAdUserEmail"></inject>
      
@@ -108,11 +108,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
 6. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
-7. Now, click on the **Next** from lower right corner to move on next page.
-
 ## Support Contact
 
-1. The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.Learner Support Contacts:
+1. The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed. Learner Support Contacts:
 
    - Email Support: cloudlabs-support@spektrasystems.com
    - Live Chat Support: https://cloudlabs.ai/labs-support
@@ -120,5 +118,3 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 2. Now, click on Next from the lower right corner to move on to the next page.
 
 ## Happy Learning!!
-
-
