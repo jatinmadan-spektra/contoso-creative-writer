@@ -56,31 +56,31 @@ Welcome to your Build Creative App using Azure AI and Prompty Lab! We've prepare
 
 ## Accessing Your Lab Environment
 
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-![](../media/gs1.png)
+![](../media/24052025(1).png)
 
 ## Exploring Your Lab Resources
 
-To get a better understanding of your lab resources and credentials, navigate to the Environment tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![](../media/gs2.png)
+![](../media/24052025(2).png)
 
 ## Utilizing the Split Window Feature
 
-For convenience, you can open the lab guide in a separate window by selecting the Split Window button from the Top right corner
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner
 
-![](../media/gs3.png)
+![](../media/24052025(3).png)
 
 ## Managing Your Virtual Machine
 
-Feel free to start, stop, or restart your virtual machine as needed from the Resources tab. Your experience is in your hands!
+Feel free to **start, stop, or restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-![](../media/gs4.png)
+![](../media/24052025(4).png)
 
 ## Let's Get Started with Azure Portal
 
-1. In the JumpVM, click on the **Azure portal** shortcut of Microsoft Edge browser which is created on desktop.
+1. In the JumpVM, click on the **Azure Portal** shortcut of Microsoft Edge browser which is created on desktop.
 
    ![](../media/gs-05.png)
 
