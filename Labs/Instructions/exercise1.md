@@ -29,7 +29,7 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
 
 1. Navigate to `C:\creative-writer\contoso-creative-writer-code-files-main` directory, click on **Select folder**.
 
-   ![](../media/ex1newimg1.png)
+   ![](../media/24052025(5).png)
 
 1. Once you open the folder in Visual Studio Code, a pop-up will appear asking, *"Do you trust the authors of the files in this folder?"* Click **Yes, I trust the authors**.
 
