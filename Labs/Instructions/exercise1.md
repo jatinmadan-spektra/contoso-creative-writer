@@ -45,7 +45,7 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
    
 1. In the `main.bicep`, navigate to line number 85, variable **resourcetoken** and update the value with **<inject key="DeploymentID" enableCopy="true"/>**. 
 
-   > **Please note:** If you missed to update this, the next task will fail to deploy the resources successfully.
+   > **Please note:** If you missed updating this, the next task will fail to deploy the resources successfully.
 
    ![](../media/L1-S7.png)
 
