@@ -163,7 +163,7 @@ In this task, you will be using the Azure Developer CLI (azd) to deploy the reso
 
 1. In the next prompt, it will ask to select a location. Use the arrow keys and select **<inject key="Region" enableCopy="false"></inject>** region from the list.
 
-   ![](../media/ex1newimg5.png)
+   ![](../media/change-3.png)
 
 1. In the next prompt, it will ask to pick a resource group to use, select **rg-creative**.
 
