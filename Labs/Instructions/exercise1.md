@@ -160,8 +160,7 @@ In this task, you will be using the Azure Developer CLI (azd) to deploy the reso
 
    ![](../media/ex1newimg4.png)
 
-   >**Note:** If prompted to check your Azure development, enter Yes.
-   >**Note:** If prompted to select recommended tools to install, press enter.
+   >**Note:** If prompted to check your Azure development tools, enter No.
 
 1. In the next prompt, it will ask to select a location. Use the arrow keys and select **<inject key="Region" enableCopy="false"></inject>** region from the list.
 
