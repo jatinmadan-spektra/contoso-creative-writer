@@ -161,7 +161,7 @@ In this task, you will be using the Azure Developer CLI (azd) to deploy the reso
    >**Note:** If prompted to check your Azure development, enter Yes.
    >**Note:** If prompted to select recommended tools to install, press enter.
 
-1. In the next prompt, it will ask to select a location. Use the arrow keys and select **<inject key="AzureResourceGroupLocation"></inject>** region from the list.
+1. In the next prompt, it will ask to select a location. Use the arrow keys and select **<inject key="Region" enableCopy="false"></inject>** region from the list.
 
    ![](../media/ex1newimg5.png)
 
