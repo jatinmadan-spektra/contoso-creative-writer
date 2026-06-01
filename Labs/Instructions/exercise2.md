@@ -4,7 +4,7 @@
 
 ## Lab Scenario
 
-In this exercise, you will review the source code of creative writer application and familiarize yourself with the technologies used. You will learn about the FastAPI framework, how real-time data streaming is handled, and how monitoring and observability tools like OpenTelemetry are integrated. By the end of this exercise, you'll have a solid understanding of the code structure and the different tech stacks that power the application
+In this exercise, you will review the source code of the creative writer application and familiarize yourself with the technologies used. You will learn about the FastAPI framework, how real-time data streaming is handled, and how monitoring and observability tools like OpenTelemetry are integrated. By the end of this exercise, you'll have a solid understanding of the code structure and the different tech stacks that power the application
 
 ## Lab Objectives
 
@@ -147,7 +147,7 @@ In this task, you will review three core code files that together initialize a F
 
    >**POST /api/article:** This endpoint accepts a POST request to create an article based on the task details. It uses the PromptyStream to handle real-time streaming of the article creation process.
   
-1. As you have reviewed `main.py`, now select `orchestrator.py` from left explorer menu. This file is responsible for structured logging for generating, refining, and evaluating articles.
+1. As you have reviewed `main.py`, now select `orchestrator.py` from the left explorer menu. This file is responsible for structured logging for generating, refining, and evaluating articles.
 
 1. Navigate to the `create` function, which is the core orchestrator in this code, managing the flow between various agents to produce an article.
 
@@ -195,7 +195,7 @@ In this task, you will review three core code files that together initialize a F
 
 1. As you reviewed `orchestartor.py`, navigate to `tracing.py` file from the explorer menu. This file helps to trace all the operations and send data for logging and monitoring.
 
-1. In `tracing.py` file, find the `init_tracing` function which is a crucial part of the file.
+1. In `tracing.py` file, find the `init_tracing` function, which is a crucial part of the file.
 
    ```python
    def init_tracing(local_tracing: bool = False):
