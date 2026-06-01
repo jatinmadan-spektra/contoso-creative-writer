@@ -23,6 +23,8 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
 
    ![](../media/ex1img0.png)
 
+   >**Note:** If the sign in pop up appears, close it.
+
 1. On **Visual Studio Code** pane, select **Open Folder** under **file** menu from top menu.
 
    ![](../media/ex1img6.png)
