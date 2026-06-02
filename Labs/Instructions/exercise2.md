@@ -156,6 +156,8 @@ In this task, you will review three core code files that together initialize a F
     def create(research_context, product_context, assignment_context, evaluate=True):
         feedback = "No Feedback"
 
+        yield building_agents_message()
+   
         # Research Agent Task
         yield start_message("researcher")
         research_result = researcher.research(research_context, feedback)
