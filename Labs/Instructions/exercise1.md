@@ -23,21 +23,23 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
 
    ![](../media/ex1img0.png)
 
+   >**Note:** If the sign in pop up appears, close it.
+
 1. On **Visual Studio Code** pane, select **Open Folder** under **file** menu from top menu.
 
    ![](../media/ex1img6.png)
 
-1. Navigate to `C:\creative-writer\contoso-creative-writer-stage` directory, click on **Select folder**.
+1. Navigate to `C:\creative-writer\contoso-creative-writer-code-files-main` directory, click on **Select folder**.
 
-   ![](../media/ex1newimg1.png)
+   ![](../media/change-1.png)
 
 1. Once you open the folder in Visual Studio Code, on Do you trust the authors of the files of this folder? pop up, click on Yes, I trust the authors.
 
    ![](../media/ex1img7.png)
 
-1. Once you have the **contoso-creative-writer-stage** directory opened, ensure you have the source code files from the **explorer pane**
+1. Once you have the **contoso-creative-writer-code-files-main** directory opened, ensure you have the source code files from the **explorer pane**
 
-   ![](../media/ex1newimg2.png)
+   ![](../media/change-2.png)
    
 1. From the explorer menu, navigate to `/infra/main.bicep` file to review. A Bicep file is a simplified, readable syntax for defining and deploying Azure resources, which is compiled into ARM templates for deployment.
 
@@ -48,7 +50,7 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
    ```bicep
     module ai 'core/host/ai-environment.bicep' = {
     name: 'ai'
-    scope: resourceGroup
+    scope: resourceGroup(resourceGroupName)
     params: {
         location: location
         tags: tags
@@ -60,7 +62,6 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
         : '${abbrs.storageStorageAccounts}${resourceToken}'
         openAiName: !empty(openAiName) ? openAiName : 'aoai-${resourceToken}'
         openAiConnectionName: !empty(openAiConnectionName) ? openAiConnectionName : 'aoai-connection'
-        openAiContentSafetyConnectionName: !empty(openAiContentSafetyConnectionName) ? openAiContentSafetyConnectionName : 'aoai-content-safety-connection'
         openAiModelDeployments: array(contains(aiConfig, 'deployments') ? aiConfig.deployments : [])
         logAnalyticsName: !useApplicationInsights
         ? ''
@@ -85,23 +86,6 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
 
    >Additionally, it handles the setup for application insights and container registries.
 
-1. The next part defines the configuration for deploying a Bing Search resource in Azure. It is set to be deployed globally and provides the search functionality for the application.
-
-   ```bicep
-   module bing 'core/bing/bing-search.bicep' = {
-   name: 'bing'
-   scope: resourceGroup
-   params: {
-      name: 'agent-bing-search'
-      location: 'global'
-      }
-    }
-   ```
-
-   >This module configures a Bing Search resource in the global region, which will be used for search-related operations.
-
-   >The name and location parameters can be customized to define the Bing service's characteristics.
-
 ### Task 2: Streamlining Azure Resource Deployment with Azure Developer CLI (azd)
 
 In this task, you will be using the Azure Developer CLI (azd) to deploy the resources defined in your Bicep templates to Azure. The Azure Developer CLI simplifies the process of managing infrastructure as code, allowing you to efficiently deploy, manage, and monitor your applications and resources directly from the command line.
@@ -116,25 +100,25 @@ In this task, you will be using the Azure Developer CLI (azd) to deploy the reso
 
    >**LabTip: Git Bash** is a command-line tool for Windows that lets users run Git commands and Unix-like shell commands.
 
-1. Once the **GitBash** terminal opened, run the following command to Sign in and authenticate the azd tool.
+1. Once the **GitBash** terminal is opened, run the following command to sign in and authenticate the azd tool.
 
    ```bash
    azd auth login
    ```
-1. Once you run this command, a sign in page opens up, as you have already logged in to portal you just need to select your account and click continue.
+1. Once you run this command, a sign-in page opens up. Since you have already logged in to the portal, just select your account and click continue.
 
-1. Once you logged in successfully, navigate back to your **GitBash** terminal and run the following command to authenticate **Azure CLI** tool aswell.
+1. Once you have logged in successfully, navigate back to your **GitBash** terminal and run the following command to authenticate **Azure CLI** tool as well.
 
    ```bash
    az login
    ```
-   >Note: You may need to minimize Visual Studio Code pane to see the pop up window to sign in.
+   >Note: You may need to minimize the Visual Studio Code pane to see the pop-up window to sign in.
 
-1. Once you are on the pop up window, select **Work or school account** and click on **Continue**.
+1. Once you are on the pop-up window, select **Work or school account** and click on **Continue**.
 
    ![](../media/ex1img3.png)
 
-1. In the sign in page, provide the following:
+1. In the sign-in page, provide the following:
 
    Username: <inject key="AzureAdUserEmail"></inject> and click on **Next**.
 
@@ -144,27 +128,31 @@ In this task, you will be using the Azure Developer CLI (azd) to deploy the reso
 
    ![](../media/ex1img5.png)
 
-1. When prompts, click on **No, sign in to this app only** and continue.
+1. When prompted, click on **No, sign in to this app only** and continue.
 
-1. Return to your **Visual Studio Code** terminal, now it prompts you to select subscription with a list of subscriptions, enter **1** and hit enter.
+1. Return to your **Visual Studio Code** terminal. It prompts you to select a subscription with a list of subscriptions, enter **1**, and hit enter.
 
-1. Once you have successfully logged in, run the following command which will deploy all the defined resources in Azure.
+1. Once you have successfully logged in, run the following command, which will deploy all the defined resources in Azure.
 
    ```
    azd up
    ```
 
-1. Once you run this command it will prompt to select subscription, just hit enter and continue.
+1. Once you run this command, it will prompt you to select a subscription. Just hit enter and continue.
 
    ![](../media/ex1newimg4.png)
 
-1. In the next prompt, it will ask to select location. Use the arrow keys and select **Canada East** region from the list.
+   >**Note:** If prompted to check your Azure development tools, enter No.
 
-   ![](../media/ex1newimg5.png)
+1. In the next prompt, it will ask to select a location. Use the arrow keys and select **<inject key="Region" enableCopy="false"></inject>** region from the list.
 
-   >This may take upto 15 minutes to deploy all the rsources, till then please move to next exercise as that is a read-only exercise where you will get to know the core application and technology stacks used.
+   ![](../media/change-3.png)
+
+1. In the next prompt, it will ask to pick a resource group to use, select **rg-creative**.
+
+   > This may take up to 15 minutes to deploy all the resources. In the meantime, please move to the next exercise. It is a read-only exercise that will help you understand the core application and technology stacks.
    
-   > If you encounter an error like **error executing step command** please ignore it and proceed to the next exercise.
+   > If you encounter an error like **error executing step command**, please ignore it and proceed to the next exercise.
 
 ## Summary
 

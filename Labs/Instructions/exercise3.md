@@ -22,7 +22,7 @@ In this task, you will learn how to test the application locally by running both
    cd src/api
    ```
 
-1. Now as you are inside `api` directory, run the following command to start your **API** component.
+1. Now, as you are inside `api` directory, run the following command to start your **API** component.
 
    ```bash
    fastapi dev main.py
@@ -30,7 +30,7 @@ In this task, you will learn how to test the application locally by running both
 
 1. Once you run this command, the **API (Backend)** will be running on your local system. Please make sure you dont close the terminal or stop the process.
 
-1. Now to run the **WEB (Frontend)** you have to open a new tab on terminal.
+1. Now, to run the **WEB (Frontend)**, you have to open a new tab in the terminal.
 
 1. From the top right corner, click on **v (1)** and select **Git Bash (2)** to open a new tab of Git Bash terminal.
 
@@ -42,7 +42,7 @@ In this task, you will learn how to test the application locally by running both
    cd src/web
    ```
 
-1. Now that you have navigated to `web` directory, run the following command first to install all the dependencies and setup the environment.
+1. Now that you have navigated to `web` directory, run the following command first to install all the dependencies and set up the environment.
 
    ```bash
    npm install
@@ -56,35 +56,35 @@ In this task, you will learn how to test the application locally by running both
    
    >By running this command, the frontend will be started on your local system. Make sure you don't close the terminal tab.
 
-1. Now you will see the URL for the application which is running locally. To access that hover over the link and do **CTRL+Click**, it will directly navigate to the application interface.
+1. Now you will see the URL for the application, which is running locally. To access that, hover over the link and do **CTRL+Click**, it will directly navigate to the application interface.
 
    ![](../media/ex2img7.png)
 
-1. Once you navigate to your application, you'll be seeing a interface similar to this.
+1. Once you navigate to your application, you'll see an interface similar to this.
 
    ![](../media/ex2img6.png)
 
-1. On the application pane, click on **Example** to genrate a example prompt for the article generation. 
+1. On the application pane, click on **Example** to generate an example prompt for the article generation. 
 
    ![](../media/ex2img5.png)
 
-1. Now as the propmpt is ready, click on **Start Work** to generate the article.
+1. Now, as the prompt is ready, click on **Start Work** to generate the article.
 
    ![](../media/ex2img4.png)
 
-   >It will take sometime to generate the article, please wait till it generate.
+   >It will take some time to generate the article; please wait till it generates.
 
    ![](../media/ex2img3.png)
 
-1. Now as the article is generated, you can click on **Debug** symbol from the bottom right corner to check how the process are going on in the backend.
+1. Now, as the article is generated, you can click on **Debug** symbol from the bottom right corner to check how the process is going in the backend.
 
    ![](../media/ex2img2.png)
 
-   >This will open up a new tab from right in which you will be able to trace allthe processes happening in backend.
+   >This will open up a new tab from the right in which you will be able to trace all the processes happening in the backend.
 
    ![](../media/ex2img1.png)
 
-1. Now you can try modifiying the example prompt and change the topic and instruction to play with the application.
+1. Now you can try modifying the example prompt and changing the topic and instruction to play with the application.
 
 ## Summary
 
