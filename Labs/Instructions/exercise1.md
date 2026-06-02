@@ -50,7 +50,7 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
    ```bicep
     module ai 'core/host/ai-environment.bicep' = {
     name: 'ai'
-    scope: resourceGroup
+    scope: resourceGroup(resourceGroupName)
     params: {
         location: location
         tags: tags
@@ -62,7 +62,6 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
         : '${abbrs.storageStorageAccounts}${resourceToken}'
         openAiName: !empty(openAiName) ? openAiName : 'aoai-${resourceToken}'
         openAiConnectionName: !empty(openAiConnectionName) ? openAiConnectionName : 'aoai-connection'
-        openAiContentSafetyConnectionName: !empty(openAiContentSafetyConnectionName) ? openAiContentSafetyConnectionName : 'aoai-content-safety-connection'
         openAiModelDeployments: array(contains(aiConfig, 'deployments') ? aiConfig.deployments : [])
         logAnalyticsName: !useApplicationInsights
         ? ''
@@ -86,23 +85,6 @@ In this task, you will gain an understanding of the Azure Developer CLI (azd) an
    >It allows customization via parameters like openAiName, keyVaultName, and storageAccountName.
 
    >Additionally, it handles the setup for application insights and container registries.
-
-1. The next part defines the configuration for deploying a Bing Search resource in Azure. It is set to be deployed globally and provides the search functionality for the application.
-
-   ```bicep
-   module bing 'core/bing/bing-search.bicep' = {
-   name: 'bing'
-   scope: resourceGroup
-   params: {
-      name: 'agent-bing-search'
-      location: 'global'
-      }
-    }
-   ```
-
-   >This module configures a Bing Search resource in the global region, which will be used for search-related operations.
-
-   >The name and location parameters can be customized to define the Bing service's characteristics.
 
 ### Task 2: Streamlining Azure Resource Deployment with Azure Developer CLI (azd)
 
