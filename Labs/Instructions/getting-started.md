@@ -90,6 +90,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
    - Email/Username: <inject key="AzureAdUserEmail"></inject>
      
+
      ![](../media/gs-06.png)
 
 3. Now enter the following password and click on **Sign in**.
@@ -97,10 +98,6 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
    - Password: <inject key="AzureAdUserPassword"></inject>
 
      ![](../media/gs-07.png)
-
-     >**Note:** If you see the Action Required dialog box, then select the Ask Later option.
-
-     ![](../media/gs-08.png)
 
 4. If you see the pop-up **Stay Signed in?**, click No.
 
