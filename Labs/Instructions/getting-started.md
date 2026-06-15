@@ -62,21 +62,21 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
 
 ### Exploring Your Lab Resources
 
-To get a better understanding of your lab resources and credentials, navigate to the Environment tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![](../media/gs2.png)
+![](../media/env.png)
 
 ### Utilizing the Split Window Feature
 
-For convenience, you can open the lab guide in a separate window by selecting the Split Window button from the Top right corner
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner
 
-![](../media/gs3.png)
+![](../media/sw.png)
 
 ### Managing Your Virtual Machine
 
-Feel free to start, stop, or restart your virtual machine as needed from the Resources tab. Your experience is in your hands!
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-![](../media/gs4.png)
+![](../media/resource.png)
 
 ## Let's Get Started with Azure Portal
 
@@ -88,14 +88,14 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
 2. On the **Sign into Microsoft Azure** tab, you will see a login screen, in which you enter the following email/username and then click on **Next**.
 
-   - Email/Username: <inject key="AzureAdUserEmail"></inject>
+   - **Email/Username**: <inject key="AzureAdUserEmail"></inject>
      
 
      ![](../media/gs-06.png)
 
-3. Now enter the following password and click on **Sign in**.
+3. Now enter the following Temporary Access Pass, and click on **Sign in**.
 
-   - Password: <inject key="AzureAdUserPassword"></inject>
+   - **Temporary Access Pass**: <inject key="AzureAdUserPassword"></inject>
 
      ![](../media/gs-07.png)
 
@@ -106,6 +106,8 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 6. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
 7. Now, click on the **Next** from the lower right corner to move on to the next page.
+
+      ![](../media/next.png)
 
 ## Support Contact
 
